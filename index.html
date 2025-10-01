@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Faceball</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+      overflow: hidden;
+    }
+    canvas {
+      display: block;
+      margin: auto;
+      background: black;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <!-- pygbag loader -->
+  <script>
+    var Module = {
+      canvas: document.createElement("canvas")
+    };
+    var locateFile = function(path, prefix) {
+      return "https://pygame-web.github.io/archives/0.9/" + path;
+    };
+  </script>
+  <script src="https://pygame-web.github.io/archives/0.9/pygame.loader.js"></script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <script type="text/javascript">
+    // Tell pygbag which Python file to run
+    window.pygbagConfig = {
+      main: "main.py"
+    };
+  </script>
+</body>
+</html>
