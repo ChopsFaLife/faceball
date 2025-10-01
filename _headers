@@ -1,6 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self' https://pygame-web.github.io data: blob:;
-  script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pygame-web.github.io;
-  style-src 'self' 'unsafe-inline';
-  connect-src 'self' https://pygame-web.github.io;
-  img-src 'self' data: https://pygame-web.github.io;
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self' https://pygame-web.github.io data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://pygame-web.github.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://pygame-web.github.io; connect-src 'self' https://pygame-web.github.io;
